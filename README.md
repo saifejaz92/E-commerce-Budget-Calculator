@@ -1,5 +1,7 @@
 E-Commerce Budget Calculator
+
 Introduction
+
 The E-Commerce Budget Calculator is a handy tool designed to help online sellers effectively manage their expenses and understand their financial standing. Whether you're a seasoned e-commerce entrepreneur or just starting out, keeping track of your finances is crucial for success. This app simplifies the process by allowing users to input their expenses and instantly receive detailed breakdowns of their daily, weekly, and monthly spending, as well as insights into their profitability.
 
 Features
