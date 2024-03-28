@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'screens/homepage.dart';
 
-void main() {
+void main() async {
+  var devices = ["82DC1676C15DD2BA408EE989F14F71BD"];
+  WidgetsFlutterBinding.ensureInitialized();
+  await MobileAds.instance.initialize();
+  RequestConfiguration requestConfiguration = RequestConfiguration(
+    testDeviceIds: devices,
+  );
+  MobileAds.instance.updateRequestConfiguration(requestConfiguration);
   runApp(const MyApp());
 }
 

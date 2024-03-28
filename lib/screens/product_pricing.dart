@@ -1,3 +1,4 @@
+import 'package:budget_app/utils/ads.dart';
 import 'package:currency_converter/currency.dart';
 import 'package:flutter/material.dart';
 import 'package:currency_converter/currency_converter.dart';
@@ -45,6 +46,7 @@ class _MyFieldState extends State<ProductPricing> {
       finalConvert = usdConvert!.toDouble();
       marketingCostRupees = finalConvert;
     });
+    print(finalConvert);
   }
 
   //Section For order
@@ -216,7 +218,9 @@ class _MyFieldState extends State<ProductPricing> {
           ),
         ),
         const SizedBox(
-          height: 10,
+          height: 50,
+          width: 500,
+          child: AdsWidget(),
         ),
         //Code for marrketing section.
         Container(
@@ -307,11 +311,13 @@ class _MyFieldState extends State<ProductPricing> {
           ),
         ),
         const SizedBox(
-          height: 10,
+          height: 50,
+          width: 500,
+          child: AdsWidget(),
         ),
         //Container For Orders Section.
         Container(
-          height: 450,
+          height: 480,
           width: MediaQuery.of(context).size.width * 1,
           decoration: BoxDecoration(
             color: const Color(0xff90EE90),
@@ -379,7 +385,9 @@ class _MyFieldState extends State<ProductPricing> {
           ),
         ),
         const SizedBox(
-          height: 10,
+          height: 50,
+          width: 500,
+          child: AdsWidget(),
         ),
         Container(
           height: 450,
@@ -485,7 +493,7 @@ class _MyFieldState extends State<ProductPricing> {
           ),
         ),
         const SizedBox(
-          height: 10,
+          height: 20,
         ),
         Container(
           alignment: Alignment.center,
